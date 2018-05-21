@@ -34,7 +34,7 @@ function viewCart() {
     } else if(cart.length === 2){
       return `In your cart, you have ${firstEle}, and ${pushEle}`;
     } else {
-      return `In your cart, you have ${firstEle}, ${pushEle}, 
+      return `In your cart, you have ${firstEle}, ${newStr}, and ${lastEle}` 
     }
   }
 }
