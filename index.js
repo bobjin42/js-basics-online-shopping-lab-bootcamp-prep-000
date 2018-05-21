@@ -19,7 +19,7 @@ function addToCart(item) {
 
 function viewCart() {
   var firstEle = `${cart[0].itemName} at ${cart[0].itemPrice}`;
-  var lastEle = `${cart[cart.length -1]} at ${cart[cart.length -1].itemPrice}`;
+  var lastEle = `${cart[cart.length -1].itemName} at ${cart[cart.length -1].itemPrice}`;
   var newArr = [];
   for(var i = 1; i < cart.length - 1; i++){
     var itemObj = cart[i];
