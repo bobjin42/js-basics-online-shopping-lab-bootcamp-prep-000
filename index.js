@@ -27,7 +27,7 @@ function viewCart() {
   if(cart.length === 1){
     return `In your cart, you have ${firstEle}.`
   }else if(cart.length === 2){
-      return `In your cart, you have ${firstEle}, and ${newStr}.`
+      return `In your cart, you have ${firstEle}, and ${lastEle}.`
   }  
   for(var i = 1; i < cart.length -1; i++){
     var itemObj = cart[i];
