@@ -19,8 +19,14 @@ function addToCart(item) {
 
 function viewCart() {
   for(var i = 0; i < cart.length; i++){
-    var item = cart[i];
-    
+    var itemObj = cart[i];
+    var name = itemObj.itemName;
+    var price = itemObj.itemPrice;
+    var midEle = `you have ${name} at $${price}`;
+    var lastEle = `and ${name} at $${price}`;
+    if(cart.length === 1){
+      return `
+    }
   }
 }
 
