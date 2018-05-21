@@ -31,7 +31,7 @@ function viewCart() {
     var pushEle = `${name} at $${price}, `;
     newStr += pushEle;
     if(cart.length === 1){
-      return `In your cart, you have ${firstEle}.`;
+      return `In your cart, you have ${newStr}.`;
     } else if(cart.length === 2){
       return `In your cart, you have ${firstEle}, and ${newStr}.`;
     }  
