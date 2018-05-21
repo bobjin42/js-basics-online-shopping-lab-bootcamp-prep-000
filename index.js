@@ -30,12 +30,12 @@ function viewCart() {
     if(cart.length === 0){
       return "Your shopping cart is empty.";
     } else if (cart.length === 1){
-      return `In your cart, you have ${firstEle}`;
+      return `In your cart, you have ${firstEle}.`;
     } else if(cart.length === 2){
-      return `In your cart, you have ${firstEle}, and ${newStr}`;
+      return `In your cart, you have ${firstEle}, and ${newStr}.`;
     }  
     }
-    return `In your cart, you have ${firstEle}, ${newStr}and ${lastEle}`
+    return `In your cart, you have ${firstEle}, ${newStr}and ${lastEle}.`
   }
 
 function total() {
