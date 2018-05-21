@@ -64,9 +64,9 @@ function removeFromCart(item) {
 function placeOrder(cardNumber) {
   if(cardNumber === undefined){
     return `Sorry, we don't have a credit card on file for you.`
-  }else{
+  } else {
     var sum = total();
     cart = [];
-    return 
+    return `Your total cost is ${sum}, which will be charged to the card ${cardNumber}.`
   }
 }
