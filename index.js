@@ -26,16 +26,15 @@ function viewCart() {
   var newStr = "";
   if(cart.length === 1){
     return `In your cart, you have ${firstEle}.`
-  }
+  }else if(cart.length === 2){
+      return `In your cart, you have ${firstEle}, and ${newStr}.`
+  }  
   for(var i = 1; i < cart.length -1; i++){
     var itemObj = cart[i];
     var name = itemObj.itemName;
     var price = itemObj.itemPrice;
     var pushEle = `${name} at $${price}, `;
     newStr += pushEle;
-    if(cart.length === 2){
-      return `In your cart, you have ${firstEle}, and ${newStr}.`;
-    }  
     }
     return `In your cart, you have ${firstEle}, ${newStr}and ${lastEle}.`
   }
@@ -63,5 +62,5 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
-  // write your code here
+  
 }
