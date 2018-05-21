@@ -24,7 +24,7 @@ function viewCart() {
   var firstEle = `${cart[0].itemName} at $${cart[0].itemPrice}`;
   var lastEle = `${cart[cart.length -1].itemName} at $${cart[cart.length -1].itemPrice}`
   var newStr = "";
-else if(cart.length === 1){
+if(cart.length === 1){
     return `In your cart, you have ${firstEle}.`
   }
   for(var i = 1; i < cart.length -1; i++){
