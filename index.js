@@ -25,7 +25,9 @@ function viewCart() {
     var midEle = `you have ${name} at $${price}`;
     var lastEle = `and ${name} at $${price}`;
     if(cart.length === 1){
-      return `
+      return `In your cart, ${midEle}`;
+    }else if(cart.length > 1){
+      return
     }
   }
 }
