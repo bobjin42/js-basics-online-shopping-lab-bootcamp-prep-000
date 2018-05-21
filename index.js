@@ -10,7 +10,9 @@ function setCart(c) {
 }
 
 function addToCart(item) {
- 
+  var pair = {};
+  pair.itemName = item;
+  pair.itemPrice = Math.floor(Math.random()) + 1;
 }
 
 function viewCart() {
