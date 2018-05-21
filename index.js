@@ -53,9 +53,10 @@ function removeFromCart(item) {
     var ele = cart[i];
     var name = ele.itemName;
     if(name === item){
-      cart.splice()
+      cart.splice(i, 1);
     }
   }
+  return cart;
 }
 
 function placeOrder(cardNumber) {
