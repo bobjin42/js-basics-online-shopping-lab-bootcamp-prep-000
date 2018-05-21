@@ -28,11 +28,11 @@ function viewCart() {
     var price = itemObj.itemPrice;
     var pushEle = `${name} at $${price}`;
     if(cart.length === 1){
-      str += `${pushEle},`;
+      str += `${pushEle}, `;
     }else if(i === cart.length -1){
       str += `and ${pushEle}.`;
     }else{
-      str += `${pushEle},`;
+      str += `${pushEle}, `;
     }
     }
     return str;
