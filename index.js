@@ -21,8 +21,8 @@ function viewCart() {
   if(cart.length === 0){
     return `Your shopping cart is empty.`
   }
-  var str = "In your cart, you have";
-  for(var i = 0; i < cart.length -1; i++){
+  var str = "In your cart, you have ";
+  for(var i = 0; i < cart.length; i++){
     var itemObj = cart[i];
     var name = itemObj.itemName;
     var price = itemObj.itemPrice;
