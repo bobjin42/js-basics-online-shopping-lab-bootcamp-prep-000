@@ -26,7 +26,7 @@ function viewCart() {
     var itemObj = cart[i];
     var name = itemObj.itemName;
     var price = itemObj.itemPrice;
-    var pushEle = `${name} at $${price} `;
+    var pushEle = `${name} at $${price}`;
     if(cart.length === 1){
       str += `${pushEle},`;
     }else if(i === cart.length -1){
